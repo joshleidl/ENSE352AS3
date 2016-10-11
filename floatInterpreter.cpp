@@ -113,7 +113,7 @@ int main()
     else
         e = expV - bias;
         
-    answer = (-(int)signbit) * (fracV + (int)check0(frac)) * pow(2, e);
+    answer = pow(-1, (int)signbit) * (fracV + (double)!check0(exp)) * pow(2.0, e);
     
     cout << "Value: " << answer << endl;
     cin.ignore();
